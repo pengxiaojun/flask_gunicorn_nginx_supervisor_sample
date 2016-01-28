@@ -17,6 +17,7 @@ flask 是一个轻量级可扩展的python web框架，支持python2,python3, �
     pip install flask
     deactivate
 应用示例
+
     from flask import Flask
     app = Flask(__name__);
     @app.route("/")
@@ -24,6 +25,7 @@ flask 是一个轻量级可扩展的python web框架，支持python2,python3, �
         return "This is home page"
     def main():
         app.run(debug=True)
+        
 运行:
     http://127.0.0.1:5000 (5000是flask自带web服务器的默认端口)
 
@@ -91,5 +93,4 @@ supervisor是进程管理工具, 这里主要用它来管理 gunicorn与nginx
 supervsior 启动 gunicorn
     `supervisord -c /etc/supervisor.conf `
 
-http://127.0.0.1:8000访问首页
 
